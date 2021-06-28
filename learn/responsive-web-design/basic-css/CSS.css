@@ -1,6 +1,6 @@
 CSS
 ==============================================================================
-Review of Cascading Style Sheets in FreeCodeCamp.org
+Review of Cascading Style Sheets (CSS) in FreeCodeCamp.org
 
 
 1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
@@ -169,7 +169,7 @@ Example:
     color: orange;
   }
   .pink-text {
-    color: pink !important;  <-**************
+    color: pink !important; /* <-- overrides other styles */
   }
   .blue-text {
     color: blue;
@@ -347,16 +347,116 @@ Example:
 All elements with type=“radio” will have these margins.
 
 ==========
+[Hex](https://en.wikipedia.org/wiki/Hexadecimal)
+symbols for digits 0-9,A-F or 0-F for zero to sixteen.
 
-13 more exercises to go to finish Basic CSS
-
-Last was) Override All Other Styles by using "Important" Use
-
+===========
 Hex Code for Specific Colors
-Use Hex Code to Mix Colors
-Use Abbreviated Hex Code
+
+#RRGGBB
+First two digits for read, second pair for green, last two digits for blue
+0 weaker, F stronger
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- metadata elements -->
+    <title>use-hex-code-for-specific-colors</title>
+    <link>
+    </link>
+    <meta>
+    </meta>
+    <style>
+      body {
+          /* background-color: black; */
+          background-color: #000000;
+      }
+      .red-text {
+        color: #FF0000;
+      }
+
+      .green-text {
+          color: #00FF00;
+      }
+
+      .dodger-blue-text {
+          color: #1E90FF;
+      }
+
+      .orange-text {
+          color: #FFA500;
+      }
+    </style>
+</head>
+
+<body>
+    <!-- page contents -->
+    <h1 class="red-text">I am red!</h1>
+
+    <h1 class="green-text">I am green!</h1>
+
+    <h1 class="dodger-blue-text">I am dodger blue!</h1>
+
+    <h1 class="orange-text">I am orange!</h1>
+</body>
+
+</html>
+
+
+===========
+Short Hex Code
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- metadata elements -->
+    <title></title>
+    <link>
+    </link>
+    <meta>
+    </meta>
+    <style>
+        .red-text {
+            color: #F00;
+        }
+
+        .fuchsia-text {
+            color: #F0F;
+        }
+
+        .cyan-text {
+            color: #0FF;
+        }
+
+        .green-text {
+            color: #0F0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="red-text">I am red!</h1>
+
+    <h1 class="fuchsia-text">I am fuchsia!</h1>
+
+    <h1 class="cyan-text">I am cyan!</h1>
+
+    <h1 class="green-text">I am green!</h1><!-- page contents -->
+</body>
+
+</html>
+
+
+
+
+==============================================================================
+10 more exercises to go to finish Basic CSS
+
 Use RGB values to Color Elements
 Use RGB to Mix Colors
+
 Use CSS Variables to change several elements at once
 Create a custom CSS Variable
 Use a custom CSS Variable
