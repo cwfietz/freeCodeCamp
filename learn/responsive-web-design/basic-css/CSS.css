@@ -65,7 +65,7 @@ body {
 }
 </style>
 
-all elements in the body will inherit the body element’s styles.
+all elements in the body will inherit the body element's styles.
 
 ====
 class styles will override the styles inherited from body.
@@ -277,7 +277,7 @@ or
 
   .smaller-image {
     border-radius: 10px;
-    width: 50%; <!— for cirular images —>
+    width: 50%; <!— for circular images —>
   }
 
 ==========
@@ -350,7 +350,7 @@ All elements with type=“radio” will have these margins.
 
 13 more exercises to go to finish Basic CSS
 
-Last was) Override All Other Styles by using ImportantUse
+Last was) Override All Other Styles by using "Important" Use
 
 Hex Code for Specific Colors
 Use Hex Code to Mix Colors
