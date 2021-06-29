@@ -470,11 +470,25 @@ values range from 0 to 255 to represent the same values as hex but in base 10 in
   }
 </style>
 
+===========
+CSS Variables
+
+--penguin-skin: gray;
+--penguin-belly: white;
+--penguin-beak: orange;
+
+...
+background: var(--penguin-skin, gray);
+...
+background: var(--penguin-belly, white);
+...
+background: var(--penguin-beak, orange);
+...
+
 
 ==============================================================================
-9 more exercises to go to finish Basic CSS
+8 more exercises to go to finish Basic CSS
 
-Use CSS Variables to change several elements at once
 Create a custom CSS Variable
 Use a custom CSS Variable
 Attach a Fallback value to a CSS Variable
