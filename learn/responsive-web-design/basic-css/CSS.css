@@ -473,8 +473,42 @@ Inherit CSS Variables
 ...
 The other elements that inherit from :root can use this --penguin-belly variable.
 
-==============================================================================
- more exercises to go to finish Basic CSS
+<style>
+  :root {
+    --penguin-skin: gray;
+    --penguin-belly: pink;
+    --penguin-beak: orange;
+  }
 
-Change a variable for a specific area
+  body {
+    background: var(--penguin-belly, #c6faf1);
+  }
+
+  .penguin {
+    /* Only change code below this line */
+    --penguin-belly: white;
+
+Withing the .penguin class the --penguin-belly variable will interpreted as while while outside of this class the --penguin-belly variable will be pink.
+
+===========
 Use a media query to change a variable
+E.g.
+<style>
+  :root {
+    --penguin-size: 300px;
+    --penguin-skin: gray;
+    --penguin-belly: white;
+    --penguin-beak: orange;
+  }
+
+  @media (max-width: 350px) {
+    :root {
+      /* Only change code below this line */
+      --penguin-size: 200px;
+      --penguin-skin: black;
+      /* Only change code above this line */
+    }
+  }
+
+
+
