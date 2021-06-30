@@ -357,16 +357,6 @@ Hex Code for Specific Colors
 First two digits for read, second pair for green, last two digits for blue
 0 weaker, F stronger
 
-<!DOCTYPE html>
-<html>
-
-<head>
-    <!-- metadata elements -->
-    <title>use-hex-code-for-specific-colors</title>
-    <link>
-    </link>
-    <meta>
-    </meta>
     <style>
       body {
           /* background-color: black; */
@@ -388,10 +378,7 @@ First two digits for read, second pair for green, last two digits for blue
           color: #FFA500;
       }
     </style>
-</head>
 
-<body>
-    <!-- page contents -->
     <h1 class="red-text">I am red!</h1>
 
     <h1 class="green-text">I am green!</h1>
@@ -399,24 +386,11 @@ First two digits for read, second pair for green, last two digits for blue
     <h1 class="dodger-blue-text">I am dodger blue!</h1>
 
     <h1 class="orange-text">I am orange!</h1>
-</body>
-
-</html>
 
 
 ===========
 Short Hex Code
 
-<!DOCTYPE html>
-<html>
-
-<head>
-    <!-- metadata elements -->
-    <title></title>
-    <link>
-    </link>
-    <meta>
-    </meta>
     <style>
         .red-text {
             color: #F00;
@@ -434,9 +408,7 @@ Short Hex Code
             color: #0F0;
         }
     </style>
-</head>
 
-<body>
     <h1 class="red-text">I am red!</h1>
 
     <h1 class="fuchsia-text">I am fuchsia!</h1>
@@ -444,9 +416,6 @@ Short Hex Code
     <h1 class="cyan-text">I am cyan!</h1>
 
     <h1 class="green-text">I am green!</h1><!-- page contents -->
-</body>
-
-</html>
 
 ===========
 RGB
@@ -478,6 +447,9 @@ A double dash, "--" is used to indicate a CSS variable
 --penguin-belly: white;
 --penguin-beak: orange;
 
+To use the value of the variable, enclose the variable in var()
+To add a value for the client to display is the variable is not valid, include it after the name of the variable.
+E.g.
 ...
 background: var(--penguin-skin, gray);
 ...
@@ -486,13 +458,23 @@ background: var(--penguin-belly, white);
 background: var(--penguin-beak, orange);
 ...
 
+Some browsers or too old to work with variables. You can set fallbacks for them. For example,
+...
+background: gray;
+background: var(--penguin-skin, gray);
+...
+
+===========
+Inherit CSS Variables
+<style>
+  :root {
+    --penguin-belly: pink;
+  }
+...
+The other elements that inherit from :root can use this --penguin-belly variable.
 
 ==============================================================================
-7 more exercises to go to finish Basic CSS
+ more exercises to go to finish Basic CSS
 
-Use a custom CSS Variable
-Attach a Fallback value to a CSS Variable
-Improve Compatibility with Browser Fallbacks
-Inherit CSS Variables
 Change a variable for a specific area
 Use a media query to change a variable

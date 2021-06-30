@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- metadata elements -->
+    <title></title>
+    <link>
+    </link>
+    <meta>
+    </meta>
+    <style>
+        :root {
+            --red-color: red;
+        }
+
+        .red-box {
+            background: red; /*This value will be used by older browsers that don't understand variables*/
+            background: var(--red-color); /*Browsers that can use variables will use this line*/
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- page contents -->
+    <div class="red-box"></div>
+</body>
+
+</html>
