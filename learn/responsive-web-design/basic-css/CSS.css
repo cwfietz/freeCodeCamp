@@ -472,6 +472,7 @@ values range from 0 to 255 to represent the same values as hex but in base 10 in
 
 ===========
 CSS Variables
+A double dash, "--" is used to indicate a CSS variable
 
 --penguin-skin: gray;
 --penguin-belly: white;
@@ -487,9 +488,8 @@ background: var(--penguin-beak, orange);
 
 
 ==============================================================================
-8 more exercises to go to finish Basic CSS
+7 more exercises to go to finish Basic CSS
 
-Create a custom CSS Variable
 Use a custom CSS Variable
 Attach a Fallback value to a CSS Variable
 Improve Compatibility with Browser Fallbacks
