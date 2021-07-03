@@ -488,7 +488,7 @@ The other elements that inherit from :root can use this --penguin-belly variable
     /* Only change code below this line */
     --penguin-belly: white;
 
-Withing the .penguin class the --penguin-belly variable will interpreted as while while outside of this class the --penguin-belly variable will be pink.
+Within the .penguin class the --penguin-belly variable will interpreted as while while outside of this class the --penguin-belly variable will be pink.
 
 ===========
 Use a media query to change a variable
@@ -503,10 +503,8 @@ E.g.
 
   @media (max-width: 350px) {
     :root {
-      /* Only change code below this line */
-      --penguin-size: 200px;
-      --penguin-skin: black;
-      /* Only change code above this line */
+      --penguin-size: 200px; /* redefines size */
+      --penguin-skin: black; /* redefines skin */
     }
   }
 
