@@ -29,3 +29,9 @@ e.g. <u>Ph.D. students</u>
 ### Emphasis (Italics)
 e.g. <em>Google was founded by Larry Page and Sergey Brin</em>
 - the browser applies the CSS of font-style: italic; to the element.
+
+### Strikethrough
+e.g. <s>Google</s> Alphabet
+- the browser applies the CSS of text-decoration: line-through; to the element.
+
+
