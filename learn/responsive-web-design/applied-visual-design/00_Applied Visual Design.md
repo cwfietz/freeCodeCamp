@@ -19,8 +19,13 @@ height: a number and units.
 ## Tags
 
 ### Strong (Bold)
-<strong>text here</strong>
 e.g. at <strong>Stanford University</strong>.
+- the browser applies the CSS of font-weight: bold; to the element.
 
 ### Underline
 e.g. <u>Ph.D. students</u>
+-  the browser applies the CSS of text-decoration: underline; to the element.
+
+### Emphasis (Italics)
+e.g. <em>Google was founded by Larry Page and Sergey Brin</em>
+- the browser applies the CSS of font-style: italic; to the element.
