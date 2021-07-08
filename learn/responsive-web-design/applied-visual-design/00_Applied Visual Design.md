@@ -34,4 +34,6 @@ e.g. <em>Google was founded by Larry Page and Sergey Brin</em>
 e.g. <s>Google</s> Alphabet
 - the browser applies the CSS of text-decoration: line-through; to the element.
 
-
+### Horizontal line
+e.g. <hr>
+- self closing
