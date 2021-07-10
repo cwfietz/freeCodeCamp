@@ -20,6 +20,9 @@ height: a number and units.
 e.g. background-color: rgba(45, 45, 45, 0.1);
     - rgba(read, green, blue, alpha(opacity))
 
+### Font size:
+e.g. font-size: 27px;
+
 ## Tags
 
 ### Strong (Bold)
