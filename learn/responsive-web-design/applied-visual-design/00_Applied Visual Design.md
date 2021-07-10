@@ -34,6 +34,10 @@ e.g. box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     - The blur-radius and spread-radius values are optional. 
     - Multiple box-shadows can be created by using commas to separate properties of each box-shadow element.
 
+### Opacity
+e.g. opacity: 0.7;
+    - 0 is transparent while 1 is opaque.
+
 ## Tags
 
 ### Strong (Bold)
