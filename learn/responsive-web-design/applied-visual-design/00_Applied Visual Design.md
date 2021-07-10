@@ -19,6 +19,7 @@ height: a number and units.
 ### Background Colour
 e.g. background-color: rgba(45, 45, 45, 0.1);
     - rgba(read, green, blue, alpha(opacity))
+    - could use another means of describing colour like rgb() or hex()
 
 ### Font size:
 e.g. font-size: 27px;
