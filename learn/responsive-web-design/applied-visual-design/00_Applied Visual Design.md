@@ -23,6 +23,17 @@ e.g. background-color: rgba(45, 45, 45, 0.1);
 ### Font size:
 e.g. font-size: 27px;
 
+### Box-Shadow
+e.g. box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    - The box-shadow property takes values for
+        - offset-x (how far to push the shadow horizontally from the element),
+        - offset-y (how far to push the shadow vertically from the element),
+        - blur-radius,
+        - spread-radius and
+        - color, in that order.
+    - The blur-radius and spread-radius values are optional. 
+    - Multiple box-shadows can be created by using commas to separate properties of each box-shadow element.
+
 ## Tags
 
 ### Strong (Bold)
