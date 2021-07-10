@@ -38,6 +38,18 @@ e.g. box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 e.g. opacity: 0.7;
     - 0 is transparent while 1 is opaque.
 
+### text-transform
+e.g. text-transform: uppercase;
+
+    Value	    | Result
+    ----------- | ----------------
+    lowercase	| "transform me"
+    uppercase	| "TRANSFORM ME"
+    capitalize  | "Transform Me"
+    initial	    | Use the default value
+    inherit	    | Use the text-transform value from the parent element
+    none	    | Default: Use the original text
+
 ## Tags
 
 ### Strong (Bold)
