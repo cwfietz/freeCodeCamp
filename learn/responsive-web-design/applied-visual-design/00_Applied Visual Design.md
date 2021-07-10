@@ -16,6 +16,10 @@ width:  a number and units.
 height: a number and units. 
     units: px, em, or percentage e.g. height: 25px;
 
+### Background Colour
+e.g. background-color: rgba(45, 45, 45, 0.1);
+    - rgba(read, green, blue, alpha(opacity))
+
 ## Tags
 
 ### Strong (Bold)
