@@ -117,6 +117,19 @@ section {
     position: relative;
 }
 
+## Fixed position:
+a type of absolute positioning that locks an element relative to the browser window. Similar to absolute positioning, it's used with the CSS offset properties and also removes the element from the normal flow of the document. Other items no longer "realize" where it is positioned, which may require some layout adjustments elsewhere.
+
+One key difference between the fixed and absolute positions is that an element with a fixed position won't move when the user scrolls.
+
+e.g.
+#navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: #767676;
+}
 
 ## Pseudo-classes:
 A pseudo-class is a keyword that can be added to selectors, in order to select a specific state of the element.
