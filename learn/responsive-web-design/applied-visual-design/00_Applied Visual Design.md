@@ -23,6 +23,10 @@ for any element containing text.
 e.g.
     p { font-size: 16px; }
 
+### Line height:
+e.g. line-height: 25px;
+    - change the height of each line in a block of text. As the name suggests, it changes the amount of vertical space that each line of text gets.
+
 ### Font Weight:
 e.g. font-weight: 800;
     - The font-weight property sets how thick or thin characters are in a section of text.
