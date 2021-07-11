@@ -106,6 +106,18 @@ e.g. h2 {
             bottom: 10px;
         }
 
+## Absolute position:
+e.g. locks the #Searchbar to being 50px x 50 px to the bottm and left of its parent, section. Be sure to assign a position to the parent otherwise the browser will read all they way up the hierarchy until it reaches the <body> tag.
+#searchbar {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+section {
+    position: relative;
+}
+
+
 ## Pseudo-classes:
 A pseudo-class is a keyword that can be added to selectors, in order to select a specific state of the element.
 

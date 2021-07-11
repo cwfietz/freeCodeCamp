@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- metadata elements -->
+    <title>lock-an-element-to-its-parent-with-absolute-positioning</title>
+    <link>
+    </link>
+    <meta>
+    </meta>
+    <style>
+        #searchbar {
+            position: absolute;
+            top: 50px;
+            right: 50px;
+        }
+
+        section {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- page contents -->
+    <h1>Welcome!</h1>
+    <section>
+        <form id="searchbar">
+            <label for="search">Search:</label>
+            <input type="search" id="search" name="search">
+            <input type="submit" name="submit" value="Go!">
+        </form>
+    </section>
+</body>
+
+</html>
