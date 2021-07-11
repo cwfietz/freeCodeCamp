@@ -71,6 +71,13 @@ e.g. box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 e.g. opacity: 0.7;
     - 0 is transparent while 1 is opaque.
 
+### Relative position:
+When the position of an element is set to relative, it allows you to specify how CSS should move it relative to its current position in the normal flow of the page. It pairs with the CSS offset properties of left or right, and top or bottom. These say how many pixels, percentages, or ems to move the item away from where it is normally positioned. 
+e.g. h2 {
+            position: relative;
+            top: 15px
+        }
+
 ## Tags
 
 ### Strong (Bold)
@@ -107,4 +114,5 @@ e.g. a {
             color: blue;
         }
     </style>
+
 
