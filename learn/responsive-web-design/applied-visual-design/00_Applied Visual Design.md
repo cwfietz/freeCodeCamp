@@ -159,6 +159,18 @@ e.g.
     z-index: 1;
 }
 
+### margin - to centre a block element
+One way to center a block element horizontally is to set its margin to a value of auto. 
+This method works for images, too. Images are inline elements by default, but can be changed to block elements when you set the display property to block.
+e.g.
+div {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}
+
+
 ## Pseudo-classes:
 A pseudo-class is a keyword that can be added to selectors, in order to select a specific state of the element.
 
