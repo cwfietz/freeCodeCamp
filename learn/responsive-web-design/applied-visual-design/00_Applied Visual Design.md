@@ -31,7 +31,7 @@ text-align: center;
 text-align: right;
 text-align: left;
 
-### Font size:
+### Font size
 e.g. font-size: 27px;
 - or -
 for multiple elements or tags:
@@ -46,11 +46,11 @@ for any element containing text.
 e.g.
     p { font-size: 16px; }
 
-### Line height:
+### Line height
 e.g. line-height: 25px;
     - change the height of each line in a block of text. As the name suggests, it changes the amount of vertical space that each line of text gets.
 
-### Font Weight:
+### Font Weight
 e.g. font-weight: 800;
     - The font-weight property sets how thick or thin characters are in a section of text.
 
@@ -129,6 +129,18 @@ e.g.
     left: 0px;
     width: 100%;
     background-color: #767676;
+}
+
+### Float
+Floating elements are removed from the normal flow of a document and pushed to either the left or right of their containing parent element. It's commonly used with the width property to specify how much horizontal space the floated element requires.
+e.g.
+#left {
+    float: left;
+    width: 50%;
+}
+#right {
+    float: right;
+    width: 40%;
 }
 
 ## Pseudo-classes:
