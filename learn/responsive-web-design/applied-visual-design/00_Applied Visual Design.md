@@ -18,6 +18,10 @@ for multiple elements or tags:
     h4 { font-size: 32px; }
     h5 { font-size: 21px; }
     h6 { font-size: 14px; }
+- or -
+for any element containing text.
+e.g.
+    p { font-size: 16px; }
 
 ### Font Weight:
 e.g. font-weight: 800;
