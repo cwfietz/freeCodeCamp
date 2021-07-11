@@ -143,6 +143,22 @@ e.g.
     width: 40%;
 }
 
+### z-index
+When elements are positioned to overlap (i.e. using position: absolute | relative | fixed | sticky), the element coming later in the HTML markup will, by default, appear on the top of the other elements. However, the z-index property can specify the order of how elements are stacked on top of one another. It must be an integer (i.e. a whole number and not a decimal), and higher values for the z-index property of an element move it higher in the stack than those with lower values.
+e.g.
+.first {
+    background-color: red;
+    position: absolute;
+    z-index: 2;   <!-- will be in front of .second -->
+}
+.second {
+    background-color: blue;
+    position: absolute;
+    left: 40px;
+    top: 50px;
+    z-index: 1;
+}
+
 ## Pseudo-classes:
 A pseudo-class is a keyword that can be added to selectors, in order to select a specific state of the element.
 
