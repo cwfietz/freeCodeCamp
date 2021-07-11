@@ -1,6 +1,29 @@
 
 # Applied Visual Design
 
+## Tags
+
+### Strong (Bold)
+e.g. at <strong>Stanford University</strong>.
+- the browser applies the CSS of font-weight: bold; to the element.
+
+### Underline
+e.g. <u>Ph.D. students</u>
+-  the browser applies the CSS of text-decoration: underline; to the element.
+
+### Emphasis (Italics)
+e.g. <em>Google was founded by Larry Page and Sergey Brin</em>
+- the browser applies the CSS of font-style: italic; to the element.
+
+### Strikethrough
+e.g. <s>Google</s> Alphabet
+- the browser applies the CSS of text-decoration: line-through; to the element.
+
+### Horizontal line
+e.g. <hr>
+- self closing
+
+
 ## Properties
 ### text-align
 text-align: justify;
@@ -77,28 +100,11 @@ e.g. h2 {
             position: relative;
             top: 15px
         }
-
-## Tags
-
-### Strong (Bold)
-e.g. at <strong>Stanford University</strong>.
-- the browser applies the CSS of font-weight: bold; to the element.
-
-### Underline
-e.g. <u>Ph.D. students</u>
--  the browser applies the CSS of text-decoration: underline; to the element.
-
-### Emphasis (Italics)
-e.g. <em>Google was founded by Larry Page and Sergey Brin</em>
-- the browser applies the CSS of font-style: italic; to the element.
-
-### Strikethrough
-e.g. <s>Google</s> Alphabet
-- the browser applies the CSS of text-decoration: line-through; to the element.
-
-### Horizontal line
-e.g. <hr>
-- self closing
+e.g. h2 {
+            position: relative;
+            left: 15px;
+            bottom: 10px;
+        }
 
 ## Pseudo-classes:
 A pseudo-class is a keyword that can be added to selectors, in order to select a specific state of the element.
@@ -109,10 +115,6 @@ For example, the styling of an anchor tag can be changed for its hover state usi
 e.g. a {
             color: #000;
         }
-
-        a:hover {
+     a:hover {
             color: blue;
         }
-    </style>
-
-
