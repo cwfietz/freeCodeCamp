@@ -79,6 +79,11 @@ e.g. background-color: rgba(45, 45, 45, 0.1);
     - rgba(read, green, blue, alpha(opacity))
     - could use another means of describing colour like rgb() or hex()
 
+#### background: linear-gradient
+e.g. background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+    - ange of direction of gradient. 0deg is bottom to top.
+    - can have list of more than two colors.
+
 ### Box-Shadow
 e.g. box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     - The box-shadow property takes values for
@@ -94,6 +99,8 @@ e.g. box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 e.g. opacity: 0.7;
     - 0 is transparent while 1 is opaque.
 
+## Position:
+
 ### Relative position:
 When the position of an element is set to relative, it allows you to specify how CSS should move it relative to its current position in the normal flow of the page. It pairs with the CSS offset properties of left or right, and top or bottom. These say how many pixels, percentages, or ems to move the item away from where it is normally positioned. 
 e.g. h2 {
@@ -106,8 +113,8 @@ e.g. h2 {
             bottom: 10px;
         }
 
-## Absolute position:
-e.g. locks the #Searchbar to being 50px x 50 px to the bottm and left of its parent, section. Be sure to assign a position to the parent otherwise the browser will read all they way up the hierarchy until it reaches the <body> tag.
+### Absolute position:
+e.g. 
 #searchbar {
     position: absolute;
     top: 50px;
@@ -116,8 +123,9 @@ e.g. locks the #Searchbar to being 50px x 50 px to the bottm and left of its par
 section {
     position: relative;
 }
+locks the #Searchbar to being 50px x 50 px to the bottom and left of its parent, section. Be sure to assign a position to the parent otherwise the browser will read all they way up the hierarchy until it reaches the <body> tag.
 
-## Fixed position:
+### Fixed position:
 a type of absolute positioning that locks an element relative to the browser window. Similar to absolute positioning, it's used with the CSS offset properties and also removes the element from the normal flow of the document. Other items no longer "realize" where it is positioned, which may require some layout adjustments elsewhere.
 
 One key difference between the fixed and absolute positions is that an element with a fixed position won't move when the user scrolls.
@@ -255,7 +263,7 @@ Lightness is the amount of white or black in a color. A percentage is given rang
 
 Here are a few examples of using hsl() with fully-saturated, normal lightness colors:
 
-Color       |   HSL
+Colour       |   HSL
 ---------------------------
 red	        |   hsl(0, 100%, 50%)
 yellow	    |   hsl(60, 100%, 50%)
