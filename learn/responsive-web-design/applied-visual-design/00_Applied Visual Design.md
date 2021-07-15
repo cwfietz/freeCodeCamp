@@ -84,6 +84,17 @@ e.g. background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
     - ange of direction of gradient. 0deg is bottom to top.
     - can have list of more than two colors.
 
+#### background: repeating-linear-gradient
+e.g. background: repeating-linear-gradient(
+      45deg,
+      yellow 0px,
+      blue 40px,
+      green 40px,
+      red 80px
+    );
+    - there are many different parameters for this function
+    - here, the 0px to 40px is one band while the 40px to 80px is the next band. the colors at the beginning and ends of the bands are the start and end colors for the repeating gradients.
+
 ### Box-Shadow
 e.g. box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     - The box-shadow property takes values for
