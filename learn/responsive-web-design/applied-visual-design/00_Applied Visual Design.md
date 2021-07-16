@@ -116,6 +116,10 @@ e.g. box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 e.g. opacity: 0.7;
     - 0 is transparent while 1 is opaque.
 
+### Transform size
+e.g. transform: scale(1.5);
+
+
 ## Position:
 
 ### Relative position:
