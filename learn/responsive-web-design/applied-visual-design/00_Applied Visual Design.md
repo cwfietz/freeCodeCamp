@@ -214,6 +214,21 @@ a:hover {
     color: blue;
 }
 
+e.g.
+div {
+  width: 70%;
+  height: 100px;
+  margin:  50px auto;
+  background: linear-gradient(
+    53deg,
+    #ccfffc,
+    #ffcccf
+  );
+}
+div:hover {
+    transform: scale(1.1);
+}
+
 
 ## Colour
 Color theory and its impact on design is a deep topic and only the basics are covered in the following challenges. On a website, color can draw attention to content, evoke emotions, or create visual harmony. Using different combinations of colors can really change the look of a website, and a lot of thought can go into picking a color palette that works with your content.
