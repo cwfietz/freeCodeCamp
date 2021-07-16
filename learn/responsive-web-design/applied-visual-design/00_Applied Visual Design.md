@@ -95,6 +95,12 @@ e.g. background: repeating-linear-gradient(
     - there are many different parameters for this function
     - here, the 0px to 40px is one band while the 40px to 80px is the next band. the colors at the beginning and ends of the bands are the start and end colors for the repeating gradients.
 
+#### background: url
+e.g.
+    body {
+      background: url("https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png");
+    }
+
 ### Box-Shadow
 e.g. box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     - The box-shadow property takes values for
