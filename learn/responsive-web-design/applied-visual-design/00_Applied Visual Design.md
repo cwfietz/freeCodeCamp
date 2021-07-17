@@ -235,6 +235,64 @@ div:hover {
     transform: scale(1.1);
 }
 
+## Pseudo-elements
+the ::before and ::after pseudo-elements. These pseudo-elements are used to add something before or after a selected element. In the following example, a ::before pseudo-element is used to add a rectangle to an element with the class heart:
+
+.heart::before {
+  content: "";
+  background-color: yellow;
+  border-radius: 25%;
+  position: absolute;
+  height: 50px;
+  width: 70px;
+  top: -50px;
+  left: 5px;
+}
+
+For the ::before and ::after pseudo-elements to function properly, they must have a defined content property. This property is usually used to add things like a photo or text to the selected element. When the ::before and ::after pseudo-elements are used to make shapes, the content property is still required, but it's set to an empty string. In the above example, the element with the class of heart has a ::before pseudo-element that produces a yellow rectangle with height and width of 50px and 70px, respectively. This rectangle has round corners due to its 25% border-radius and is positioned absolutely at 5px from the left and 50px above the top of the element.
+
+e.g.
+<style>
+        .heart {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: pink;
+            height: 50px;
+            width: 50px;
+            transform: rotate(-45deg);
+        }
+
+        .heart::after {
+            background-color: pink;
+            content: "";
+            border-radius: 50%;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 0px;
+            left: 25px;
+        }
+
+        .heart::before {
+            content: "";
+            background-color: pink;
+            border-radius: 50%;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: -25px;
+            left: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heart"></div>
+... makes a pink heart.
 
 ## Colour
 Color theory and its impact on design is a deep topic and only the basics are covered in the following challenges. On a website, color can draw attention to content, evoke emotions, or create visual harmony. Using different combinations of colors can really change the look of a website, and a lot of thought can go into picking a color palette that works with your content.
@@ -348,3 +406,28 @@ lightness - amount of black or white
     <div class="center"></div>
 ... makes a blue crescent moon shape.
 
+## Animation
+The animation properties control how the animation should behave and the @keyframes rule controls what happens during that animation. There are eight animation properties in total. This challenge will keep it simple and cover the two most important ones first:
+
+animation-name sets the name of the animation, which is later used by @keyframes to tell CSS which rules go with which animations.
+
+animation-duration sets the length of time for the animation.
+
+@keyframes is how to specify exactly what happens within the animation over the duration. This is done by giving CSS properties for specific "frames" during the animation, with percentages ranging from 0% to 100%. If you compare this to a movie, the CSS properties for 0% is how the element displays in the opening scene. The CSS properties for 100% is how the element appears at the end, right before the credits roll. Then CSS applies the magic to transition the element over the given duration to act out the scene.
+e.g.
+#rect {
+  animation-name: rainbow;
+  animation-duration: 4s;
+}  
+
+@keyframes rainbow {
+  0% {
+    background-color: blue;
+  }
+  50% {
+    background-color: green;
+  }
+  100% {
+    background-color: yellow;
+  }
+}
