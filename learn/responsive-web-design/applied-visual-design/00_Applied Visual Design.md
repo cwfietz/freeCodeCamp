@@ -119,6 +119,8 @@ e.g. opacity: 0.7;
 ### Transform size
 e.g. transform: scale(1.5);
 
+### Transform skew
+e.g. transform: skewX(24deg);
 
 ## Position:
 
