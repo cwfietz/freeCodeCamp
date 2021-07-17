@@ -120,7 +120,11 @@ e.g. opacity: 0.7;
 e.g. transform: scale(1.5);
 
 ### Transform skew
-e.g. transform: skewX(24deg);
+e.g.
+transform: skewX(24deg);
+transform: skewY(-10deg);  
+transform: skewX(24deg, 10deg);
+    - skews the selected element along its axises by the given degrees.
 
 ## Position:
 
