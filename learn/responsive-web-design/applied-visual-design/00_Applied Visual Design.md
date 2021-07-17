@@ -323,3 +323,28 @@ All elements have a default background-color of transparent.
 hsl - hue, saturation, lightness
 saturation - amount of grey
 lightness - amount of black or white
+
+## Graphics 
+ - By manipulating different selectors and properties, you can make interesting shapes.
+ e.g.
+ <style>
+    .center {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        background-color: transparent;
+        border-radius: 50%;
+        box-shadow: 25px 10px 0 0 blue;
+      }
+    </style>
+</head>
+<body>
+    <!-- page contents -->
+    <div class="center"></div>
+... makes a blue crescent moon shape.
+
