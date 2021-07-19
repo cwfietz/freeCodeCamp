@@ -463,7 +463,7 @@ e.g.
   }
 }
 
-e.g.
+e.g. diagonal motion and colour change
 <style>
       div {
         height: 40px;
@@ -507,3 +507,21 @@ e.g.
 e.g.
 - animation-iteration-count: 3;
 - animation-iteration-count: infinite;
+
+Use a different @keyframes block for each element you want to animate differently
+e.g.
+@keyframes backdiv {
+  50% {
+    background: #ffe6f2;
+  }
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1) rotate(-45deg);
+  }
+  
+  50% {
+    transform: scale(0.6) rotate(-45deg);
+  }
+}
