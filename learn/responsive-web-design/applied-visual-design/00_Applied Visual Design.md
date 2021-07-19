@@ -502,3 +502,8 @@ e.g.
   <body>
     <!-- page contents -->
     <div id="rect"></div>
+
+### animation-iteration-count
+e.g.
+- animation-iteration-count: 3;
+- animation-iteration-count: infinite;
