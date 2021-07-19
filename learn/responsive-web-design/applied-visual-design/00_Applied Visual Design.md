@@ -622,3 +622,6 @@ e.g.
     top: 249px;
   }
 }
+
+e.g.
+animation-timing-function: cubic-bezier(0,0,0.58,1); /* same as ease-out */
