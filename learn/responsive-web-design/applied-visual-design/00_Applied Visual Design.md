@@ -520,8 +520,12 @@ e.g.
   0% {
     transform: scale(1) rotate(-45deg);
   }
-  
+
   50% {
     transform: scale(0.6) rotate(-45deg);
   }
 }
+
+and each can have different percentages of progress through the animation.
+
+
