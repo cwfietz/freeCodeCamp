@@ -503,6 +503,10 @@ e.g. diagonal motion and colour change
     <!-- page contents -->
     <div id="rect"></div>
 
+### animation-fill-mode
+e.g. animation-fill-mode: forwards;
+Set the results of the animation to stay once the duration is finished.
+
 ### animation-iteration-count
 e.g.
 - animation-iteration-count: 3;
@@ -563,3 +567,14 @@ e.g.
   }
 }
 
+### animation-timing-function
+There are a number of predefined keywords available for popular options. For example, the default value is ease, which starts slow, speeds up in the middle, and then slows down again in the end. Other options include ease-out, which is quick in the beginning then slows down, ease-in, which is slow in the beginning, then speeds up at the end, or linear, which applies a constant animation speed throughout.
+e.g.
+#ball1 {
+  left: 27%;
+  animation-timing-function: linear;
+}
+#ball2 {
+  left: 56%;
+  animation-timing-function: ease-out;
+}
