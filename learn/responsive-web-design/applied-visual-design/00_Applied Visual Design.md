@@ -116,6 +116,25 @@ e.g. box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 e.g. opacity: 0.7;
     - 0 is transparent while 1 is opaque.
 
+e.g. with animation
+#ball {
+  width: 70px;
+  height: 70px;
+  margin: 50px auto;
+  position: fixed;
+  left: 20%;
+  border-radius: 50%;
+  background: linear-gradient(35deg, #ccffff, #ffcccc);
+  animation-name: fade;
+  animation-duration: 3s;
+}
+@keyframes fade {
+  50% {
+    left: 60%;
+    opacity: 0.1;
+  }
+}
+
 ### Transform size
 e.g. transform: scale(1.5);
 
