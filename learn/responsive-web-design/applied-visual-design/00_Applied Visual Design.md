@@ -528,4 +528,38 @@ e.g.
 
 and each can have different percentages of progress through the animation.
 
+### animation-duration
+and each element can have a different animation-duration.
+e.g.
+.stars {
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  animation-iteration-count: infinite;
+}
+.star-1 {
+  margin-top: 15%;
+  margin-left: 60%;
+  animation-duration: 1s;
+  animation-name: twinkle;
+}
+.star-2 {
+  margin-top: 25%;
+  margin-left: 25%;
+  animation-duration: 0.9s;
+  animation-name: twinkle;
+}
+.star-3 {
+  margin-top: 10%;
+  margin-left: 50%;
+  animation-duration: 1.1s;
+  animation-name: twinkle;
+}
+@keyframes twinkle {
+  20% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+}
 
