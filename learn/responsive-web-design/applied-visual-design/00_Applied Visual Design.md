@@ -625,3 +625,15 @@ e.g.
 
 e.g.
 animation-timing-function: cubic-bezier(0,0,0.58,1); /* same as ease-out */
+
+### Juggling motion
+To replicate the movement of a ball being juggled you need to customize a Bezier curve.
+
+The animation-timing-function automatically loops at every keyframe when the animation-iteration-count is set to infinite. Since there is a keyframe rule set in the middle of the animation duration (at 50%), it results in two identical animation progressions at the upward and downward movement of the ball.
+
+The following cubic Bezier curve simulates a juggling movement:
+
+cubic-bezier(0.311, 0.441, 0.444, 1.649);
+
+Notice that the value of y2 is larger than 1. Although the cubic Bezier curve is mapped on a 1 by 1 coordinate system, and it can only accept x values from 0 to 1, the y value can be set to numbers larger than one. This results in a bouncing movement that is ideal for simulating the juggling ball.
+see [[52_make-motion-more-natural-using-a-bezier-curve.html]]
