@@ -235,6 +235,17 @@ div:hover {
     transform: scale(1.1);
 }
 
+e.g.
+button:hover {    
+  animation-name: background-color;
+  animation-duration: 500ms;
+}
+@keyframes background-color {
+  100% {
+    background-color: #4791d0;
+  }
+}
+
 ## Pseudo-elements
 the ::before and ::after pseudo-elements. These pseudo-elements are used to add something before or after a selected element. In the following example, a ::before pseudo-element is used to add a rectangle to an element with the class heart:
 

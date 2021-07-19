@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- metadata elements -->
+    <title>use-css-animation-to-change-the-hover-state-of-a-button</title>
+    <link></link>
+    <meta></meta>
+    <style>
+      button {
+        border-radius: 5px;
+        color: white;
+        background-color: #0f5897;
+        padding: 5px 10px 8px 10px;
+      }
+
+      button:hover {
+        animation-name: background-color;
+        animation-duration: 500ms;
+      }
+
+      @keyframes background-color {
+        100% {
+          background-color: #4791d0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- page contents -->
+    <button>Register</button>
+  </body>
+</html>
