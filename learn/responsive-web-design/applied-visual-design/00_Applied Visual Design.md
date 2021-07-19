@@ -239,6 +239,7 @@ e.g.
 button:hover {    
   animation-name: background-color;
   animation-duration: 500ms;
+  animation-fill-mode: forwards;
 }
 @keyframes background-color {
   100% {
