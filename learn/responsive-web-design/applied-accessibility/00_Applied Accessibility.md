@@ -85,9 +85,7 @@ e.g. - note that the figcaption goes inside the figure tags and can be combined 
   </figcaption>
 </figure>
 
-## Attributes
-
-### For
+## For attribute for the label tag
 The label tag wraps the text for a specific form control item, usually the name or label for a choice. This ties meaning to the item and makes the form more readable. The for attribute on a label tag explicitly associates that label with the form control and is used by screen readers.
 
 You learned about radio buttons and their labels in a lesson in the Basic HTML section. In that lesson, we wrapped the radio button input element inside a label element along with the label text in order to make the text clickable. Another way to achieve this is by using the for attribute.
@@ -98,3 +96,24 @@ e.g.
   <label for="name">Name:</label>
   <input type="text" id="name" name="name">
 </form>
+
+## fieldset
+The next form topic covers the accessibility of radio buttons. Each choice is given a label with a for attribute tying to the id of the corresponding item as covered in the last challenge. Since radio buttons often come in a group where the user must choose one, there's a way to semantically show the choices are part of a set.
+
+The fieldset tag surrounds the entire grouping of radio buttons to achieve this. It often uses a legend tag to provide a description for the grouping, which screen readers read for each choice in the fieldset element.
+
+The fieldset wrapper and legend tag are not necessary when the choices are self-explanatory, like a gender selection. Using a label with the for attribute for each radio button is sufficient.
+e.g.
+<fieldset>
+  <legend>What level ninja are you?</legend>
+
+  <input id="newbie" type="radio" name="levels" value="newbie" />
+  <label for="newbie">Newbie Kitten</label><br />
+  
+  <input id="intermediate" type="radio" name="levels" value="intermediate" />
+  <label for="intermediate">Developing Student</label><br />
+  
+  <input id="master" type="radio" name="levels" value="master" />
+  <label for="master">Master</label>
+  
+</fieldset>
