@@ -97,6 +97,12 @@ e.g.
   <input type="text" id="name" name="name">
 </form>
 
+## <input type="date"
+HTML5 introduced an option to specify a date field. Depending on browser support, a date picker shows up in the input field when it's in focus, which makes filling in a form easier for all users. For older browsers, the type will default to text, so it helps to show users the expected date format in the label or placeholder text just in case.
+e.g.
+<label for="pickdate">Preferred Date:</label>
+<input type="date" id="pickdate" name="date" placeholder="YYYY-MM-DD" />
+
 ## fieldset
 The next form topic covers the accessibility of radio buttons. Each choice is given a label with a for attribute tying to the id of the corresponding item as covered in the last challenge. Since radio buttons often come in a group where the user must choose one, there's a way to semantically show the choices are part of a set.
 
