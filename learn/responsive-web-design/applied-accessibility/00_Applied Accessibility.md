@@ -144,3 +144,10 @@ e.g.
   overflow: hidden;
 }
 
+## High contrast text
+Sufficient contrast improves your content's readability. The Web Content Accessibility Guidelines (WCAG) recommend at least a 4.5 to 1 contrast ratio for normal text. The ratio is calculated by comparing the relative luminance values of two colors. This ranges from 1:1 for the same color, or no contrast, to 21:1 for white against black, the most substantial contrast. There are many contrast checking tools available online that calculate this ratio for you.
+e.g.
+color: #636363;
+background-color: #fff;
+  - for a contrast ratio of 6:1.
+
