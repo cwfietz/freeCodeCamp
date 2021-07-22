@@ -179,9 +179,25 @@ Back example:
 Better example:
   Click here for <a href="">information about batteries</a>
 
-## accesskey attribute
+## accesskey properties
 HTML offers the accesskey attribute to specify a shortcut key to activate or bring focus to an element. Adding an accesskey attribute can make navigation more efficient for keyboard-only users. HTML5 allows this attribute to be used on any element, but it's particularly useful when it's used with interactive ones. This includes links, buttons, and form controls.
 e.g.
 <a id="first" href="#" accesskey="g">The Garfield Files: Lasagna as Training Fuel?</a>
 <a id="second" href="#" accesskey="c">Is Chuck Norris a Cat Person?</a>
+
+## tabindex property
+The HTML tabindex attribute has three distinct functions relating to an element's keyboard focus. When it's on a tag, it indicates that the element can be focused on. The value (an integer that's positive, negative, or zero) determines the behaviour.
+
+Certain elements, such as links and form controls, automatically receive keyboard focus when a user tabs through a page. It's in the same order as the elements come in the HTML source markup. This same functionality can be given to other elements, such as div, span, and p, by placing a tabindex="0" attribute on them. Here's an example:
+
+<div tabindex="0">I need keyboard focus!</div>
+
+Note: A negative tabindex value (typically -1) indicates that an element is focusable, but is not reachable by the keyboard. This method is generally used to bring focus to content programmatically (like when a div used for a pop-up window is activated). Applying a tabindex to an element with a pseudo-class style means that style is active when the use sets focus on that element.
+e.g.
+p:focus {
+  background-color: yellow;
+}
+<p tabindex="0">
+  Instructions: Fill in ALL your information then click <b>Submit</b>
+</p>
 
