@@ -123,3 +123,10 @@ e.g.
   <label for="master">Master</label>
   
 </fieldset>
+
+## time and datetime
+The time element along with a datetime attribute are used to to include standardized times. The time element is an inline element that can wrap a date or time on a page. A datetime attribute holds a valid format of that date. This is the value accessed by assistive devices. It helps avoid confusion by stating a standardized version of a time.
+e.g.
+ <time datetime="2016-08-16T00:00Z">August 16<sup>th</sup></time>
+
+ 
