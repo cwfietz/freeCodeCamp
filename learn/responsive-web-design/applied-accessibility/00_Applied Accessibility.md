@@ -179,13 +179,13 @@ Back example:
 Better example:
   Click here for <a href="">information about batteries</a>
 
-## accesskey properties
+## accesskey attribute
 HTML offers the accesskey attribute to specify a shortcut key to activate or bring focus to an element. Adding an accesskey attribute can make navigation more efficient for keyboard-only users. HTML5 allows this attribute to be used on any element, but it's particularly useful when it's used with interactive ones. This includes links, buttons, and form controls.
 e.g.
 <a id="first" href="#" accesskey="g">The Garfield Files: Lasagna as Training Fuel?</a>
 <a id="second" href="#" accesskey="c">Is Chuck Norris a Cat Person?</a>
 
-## tabindex property
+## tabindex attribute
 The HTML tabindex attribute has three distinct functions relating to an element's keyboard focus. When it's on a tag, it indicates that the element can be focused on. The value (an integer that's positive, negative, or zero) determines the behaviour.
 
 Certain elements, such as links and form controls, automatically receive keyboard focus when a user tabs through a page. It's in the same order as the elements come in the HTML source markup. This same functionality can be given to other elements, such as div, span, and p, by placing a tabindex="0" attribute on them. Here's an example:
@@ -201,3 +201,10 @@ p:focus {
   Instructions: Fill in ALL your information then click <b>Submit</b>
 </p>
 
+## Manually set the tab order with tabindex > 0
+e.g.
+<form>
+  <label for="search">Search:</label>
+  <input type="search" name="search" id="search" tabindex="1" />
+  <input type="submit" name="submit" value="Submit" id="submit" tabindex="2" />
+</form>
