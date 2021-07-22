@@ -151,3 +151,11 @@ color: #636363;
 background-color: #fff;
   - for a contrast ratio of 6:1.
 
+e.g.
+- Insufficient lightness contrast:
+    color: hsl(0, 55%, 20%);
+    background-color: hsl(120, 25%, 35%);
+- Sufficient lightness contrast:
+    color: hsl(0, 55%, 15%);
+    background-color: hsl(120, 25%, 55%);
+
