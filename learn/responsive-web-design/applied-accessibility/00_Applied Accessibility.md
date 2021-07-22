@@ -129,4 +129,18 @@ The time element along with a datetime attribute are used to to include standard
 e.g.
  <time datetime="2016-08-16T00:00Z">August 16<sup>th</sup></time>
 
- 
+
+## Screen reader only content; visually hidden
+CSS can also improve accessibility on your page when you want to visually hide content meant only for screen readers. This happens when information is in a visual format (like a chart), but screen reader users need an alternative presentation (like a table) to access the data. CSS is used to position the screen reader-only elements off the visual area of the browser window.
+
+Here's an example of the CSS rules that accomplish this:
+e.g.
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
+
