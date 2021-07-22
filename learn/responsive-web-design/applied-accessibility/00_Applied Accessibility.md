@@ -179,3 +179,9 @@ Back example:
 Better example:
   Click here for <a href="">information about batteries</a>
 
+## accesskey attribute
+HTML offers the accesskey attribute to specify a shortcut key to activate or bring focus to an element. Adding an accesskey attribute can make navigation more efficient for keyboard-only users. HTML5 allows this attribute to be used on any element, but it's particularly useful when it's used with interactive ones. This includes links, buttons, and form controls.
+e.g.
+<a id="first" href="#" accesskey="g">The Garfield Files: Lasagna as Training Fuel?</a>
+<a id="second" href="#" accesskey="c">Is Chuck Norris a Cat Person?</a>
+
