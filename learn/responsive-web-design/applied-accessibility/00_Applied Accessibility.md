@@ -172,3 +172,10 @@ e.g.
 color: #003366; blue
 background-color: #ffff33;
 
+## Meaningful links 
+Making the word, "here" a link is not useful for those using screen readers. Instead make link text meaningful.
+Back example:
+  Click <a href="">here</a> for information about batteries
+Better example:
+  Click here for <a href="">information about batteries</a>
+
