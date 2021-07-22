@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- metadata elements -->
+    <title>
+      avoid-colorblindness-issues-by-carefully-choosing-colors-that-convey-information
+    </title>
+    <!-- the yellow (#FFFF33) background-color and the green (#33FF33) text color are neighbouring
+         hues on the color wheel and virtually indistinguishable for some colorblind users.
+        (Their similar lightness also fails the contrast ratio check). Change the text color to
+         a dark blue (#003366) to solve both problems. -->
+    <style>
+      button {
+        color: #003366;
+        background-color: #ffff33;
+        font-size: 14px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- page contents -->
+    <header>
+      <h1>Danger!</h1>
+    </header>
+    <button>Delete Internet</button>
+  </body>
+</html>

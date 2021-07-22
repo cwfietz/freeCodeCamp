@@ -159,3 +159,16 @@ e.g.
     color: hsl(0, 55%, 15%);
     background-color: hsl(120, 25%, 55%);
 
+## colourblindness
+There are various forms of colorblindness. These can range from a reduced sensitivity to a certain wavelength of light to the inability to see color at all. The most common form is a reduced sensitivity to detect greens.
+
+For example, if two similar green colors are the foreground and background color of your content, a colorblind user may not be able to distinguish them. Close colors can be thought of as neighbors on the color wheel, and those combinations should be avoided when conveying important information.
+e.g.
+color: #33ff33; green
+background-color: #ffff33;
+
+Note: Some online color picking tools include visual simulations of how colors appear for different types of colorblindness. These are great resources in addition to online contrast checking calculators.
+e.g.
+color: #003366; blue
+background-color: #ffff33;
+
