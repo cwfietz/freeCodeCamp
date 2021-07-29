@@ -96,3 +96,7 @@ specifies the initial size of the item before CSS makes adjustments with flex-sh
 The flex-grow, flex-shrink, and flex-basis properties can all be set together by using the flex property.
 For example, flex: 1 0 10px; will set the item to flex-grow: 1;, flex-shrink: 0;, and flex-basis: 10px;.
 The default property settings are flex: 0 1 auto;.
+
+## order property
+is used to tell CSS the order of how flex items appear in the flex container. By default, items will appear in the same order they come in the source HTML. The property takes numbers as values, and negative numbers can be used.
+
