@@ -100,3 +100,5 @@ The default property settings are flex: 0 1 auto;.
 ## order property
 is used to tell CSS the order of how flex items appear in the flex container. By default, items will appear in the same order they come in the source HTML. The property takes numbers as values, and negative numbers can be used.
 
+## align-self property
+allows you to adjust each item's alignment individually, instead of setting them all at once. This is useful since other common adjustment techniques using the CSS properties float, clear, and vertical-align do not work on flex items. align-self accepts the same values as the align-items property and will override any value set by the align-items property.
