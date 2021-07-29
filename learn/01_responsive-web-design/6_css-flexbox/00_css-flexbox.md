@@ -77,3 +77,9 @@ CSS also has options for the direction of the wrap:
   ### wrap-reverse
   wraps items onto multiple lines from bottom-to-top if they are in rows and right-to-left if they are in columns.
 
+## flex-shrink property
+So far, all the properties in the challenges apply to the flex container (the parent of the flex items). However, there are several useful properties for the flex items.
+
+The first is the flex-shrink property. When it's used, it allows an item to shrink if the flex container is too small. Items shrink when the width of the parent container is smaller than the combined widths of all the flex items within it.
+
+The flex-shrink property takes numbers as values. The higher the number, the more it will shrink compared to the other items in the container. For example, if one item has a flex-shrink value of 1 and the other has a flex-shrink value of 3, the one with the value of 3 will shrink three times as much as the other.
