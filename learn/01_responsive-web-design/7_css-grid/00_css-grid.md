@@ -12,3 +12,9 @@ e.g.
   grid-template-columns: 50px 50px;
 }
 This will give your grid two columns that are each 50px wide. The number of parameters given to the grid-template-columns property indicates the number of columns in the grid, and the value of each parameter indicates the width of each column.
+
+## grid-template-rows property
+To adjust the rows manually, use the grid-template-rows property in the same way you use grid-template-columns.
+e.g.
+grid-template-columns: 100px 100px 100px;
+grid-template-rows: 50px 50px;
