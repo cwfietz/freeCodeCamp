@@ -39,6 +39,16 @@ e.g.
 grid-template-columns: auto 50px 10% 2fr 1fr;
 Creates five columns. The first column is as wide as its content, the second column is 50px, the third column is 10% of its container, and for the last two columns; the remaining space is divided into three sections, two are allocated for the fourth column, and one for the fifth.
 
+## repeat function
+Can be used with grid-template-columns and grid-template-rows to define the structure of a grid to specify the number of times the column or row is to be repeated, followed by a comma and the value to be repeated.
+e.g.
+grid-template-rows: repeat(100, 50px);
+
+To repeat multiple values with the repeat function and insert the function amongst other values.
+e.g.
+grid-template-columns: repeat(3, 1fr 50px) 20px; which translates to:
+grid-template-columns: 1fr 50px 1fr 50px 1fr 50px 20px;
+
 ## column-gap property
 grid-column-gap property obsolete
 Adds a gap between the columns.
@@ -55,7 +65,6 @@ row-gap: 5px;
 ## gap property
 grid-gap property obsolete
 A shorthand property for grid-row-gap and grid-column-gap that's more convenient to use. If gap has one value, it will create a gap between all rows and columns. However, if there are two values, it will use the first one to set the gap between the rows and the second value for the columns.
-
 
 ## grid-column property 
 Up to this point, all the properties that have been discussed are for grid containers. The grid-column property is the first one for use on the grid items themselves.
