@@ -75,3 +75,8 @@ To control the number of columns an item will consume, you can use the grid-colu
 e.g.
 grid-column: 1 / 3;
 This will make the item start at the first vertical line of the grid on the left and span to the 3rd vertical line of the grid, consuming two columns.
+
+## grid-row property
+e.g.
+grid-row: 2 / 4;
+Will make the item start at the second horizontal line of the grid from the top and do down to the 4th horizontal line of the grid consuming two rows.
