@@ -104,3 +104,17 @@ Align all the items in the CSS Grid to the same alignment. You can use the previ
 
 ## align-items property
 Sets the vertical alignment for all the items in the grid. This property can accept all the same values listed above.
+
+## grid-template-areas property 
+Groups cells of your the together into an area and give the area a custom name.
+e.g.
+
+grid-template-areas:
+  "header header header"
+  "advert content content"
+  "footer footer footer";
+
+The code above merges the top three cells together into an area named header, the bottom three cells into a footer area, and it makes two areas in the middle row; advert and content. Every word in the code represents a cell and every pair of quotation marks represent a row.
+
+## empty cell
+In addition to custom labels the grid-template-areas property, you can use a period (.) to designate an empty cell in the grid.
