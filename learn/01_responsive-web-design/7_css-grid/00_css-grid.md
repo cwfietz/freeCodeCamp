@@ -51,3 +51,7 @@ grid-row-gap property obsolete
 Adds a gap in between the rows of a grid.
 e.g.
 row-gap: 5px;
+
+## gap property
+grid-gap property obsolete
+A shorthand property for grid-row-gap and grid-column-gap that's more convenient to use. If gap has one value, it will create a gap between all rows and columns. However, if there are two values, it will use the first one to set the gap between the rows and the second value for the columns.
