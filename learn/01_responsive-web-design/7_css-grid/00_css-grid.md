@@ -127,3 +127,13 @@ e.g.
 }
 Will put item1 into the grid-area header.
 
+## grid-area property with NO grid-template-areas property 
+The grid-area property can be used in another way. If the grid doesn't have an areas template to reference, you can create an area on the fly for an item to be placed using this syntax:
+grid-area: horizontal line to start at / vertical line to start at / horizontal line to end at / vertical line to end at;
+This description uses the line numbers described above in the grid-column property to define where the area for this item will be. 
+e.g.
+item1 { grid-area: 1/1/2/4; }
+item1 will consume the rows between lines 1 and 2, and the columns between lines 1 and 4.
+e.g.
+.item5 { grid-area: 3/1/4/4; }
+item5 will consume the rows between lines 3 and 4, and the columns between lines 1 and 4.
