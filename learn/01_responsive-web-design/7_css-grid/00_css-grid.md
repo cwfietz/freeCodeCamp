@@ -96,3 +96,5 @@ aligns the content in the center of the cell,
 ### end
 aligns the content at the right of the cell.
 
+## align-self property
+Aligns an item vertically. This property accepts all of the same values as justify-self.
