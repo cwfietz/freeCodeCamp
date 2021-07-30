@@ -46,3 +46,8 @@ e.g.
 column-gap: 10px;
 This creates 10px of empty space between all of the columns.
 
+## row-gap
+grid-row-gap property obsolete 
+Adds a gap in between the rows of a grid.
+e.g.
+row-gap: 5px;
