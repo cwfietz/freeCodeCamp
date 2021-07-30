@@ -27,7 +27,8 @@ You can use absolute and relative units in CSS Grid to define the size of rows a
 ### em
 
 ### fr
-sets the column or row to a fraction of the available space,
+sets the column or row to a fraction of the available space
+
 ### auto
 sets the column or row to the width or height of its content automatically,
 
@@ -36,8 +37,7 @@ adjusts the column or row to the percent width of its container.
 
 e.g.
 grid-template-columns: auto 50px 10% 2fr 1fr;
-
-This snippet creates five columns. The first column is as wide as its content, the second column is 50px, the third column is 10% of its container, and for the last two columns; the remaining space is divided into three sections, two are allocated for the fourth column, and one for the fifth.
+Creates five columns. The first column is as wide as its content, the second column is 50px, the third column is 10% of its container, and for the last two columns; the remaining space is divided into three sections, two are allocated for the fourth column, and one for the fifth.
 
 ## column-gap property
 grid-column-gap property obsolete
