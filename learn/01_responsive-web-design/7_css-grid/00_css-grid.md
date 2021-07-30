@@ -38,3 +38,11 @@ e.g.
 grid-template-columns: auto 50px 10% 2fr 1fr;
 
 This snippet creates five columns. The first column is as wide as its content, the second column is 50px, the third column is 10% of its container, and for the last two columns; the remaining space is divided into three sections, two are allocated for the fourth column, and one for the fifth.
+
+## column-gap property
+grid-column-gap property obsolete
+Adds a gap between the columns.
+e.g.
+column-gap: 10px;
+This creates 10px of empty space between all of the columns.
+
