@@ -40,7 +40,7 @@ grid-template-columns: auto 50px 10% 2fr 1fr;
 Creates five columns. The first column is as wide as its content, the second column is 50px, the third column is 10% of its container, and for the last two columns; the remaining space is divided into three sections, two are allocated for the fourth column, and one for the fifth.
 
 ## repeat function
-Can be used with grid-template-columns and grid-template-rows to define the structure of a grid to specify the number of times the column or row is to be repeated, followed by a comma and the value to be repeated.
+Can be used with grid-template-columns and grid-template-rows to specify the number of times the column or row is to be repeated, followed by a comma and the value to be repeated to define the structure of a grid.
 e.g.
 grid-template-rows: repeat(100, 50px);
 
@@ -48,6 +48,12 @@ To repeat multiple values with the repeat function and insert the function among
 e.g.
 grid-template-columns: repeat(3, 1fr 50px) 20px; which translates to:
 grid-template-columns: 1fr 50px 1fr 50px 1fr 50px 20px;
+
+## minmax function
+Limits the size of items when the grid container changes size. The arguments specify the acceptable minimum and maximum sizes for your item.
+e.g.
+grid-template-columns: 100px minmax(50px, 200px);
+grid-template-columns is set to create two columns; the first is 100px wide, and the second has the minimum width of 50px and the maximum width of 200px.
 
 ## column-gap property
 grid-column-gap property obsolete
