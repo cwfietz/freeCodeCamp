@@ -55,12 +55,19 @@ e.g.
 grid-template-columns: 100px minmax(50px, 200px);
 grid-template-columns is set to create two columns; the first is 100px wide, and the second has the minimum width of 50px and the maximum width of 200px.
 
-## auto-fill option
-An option argument for the repeat funtion. Automatically inserts as many rows or columns of the desired size as possible depending on the size of the container. 
+## auto-fill parameter
+An option argument for the repeat function. Automatically inserts as many rows or columns of the desired size as possible depending on the size of the container. 
 Can be used with minmax() to create flexible layouts.
 e.g.
 repeat(auto-fill, minmax(60px, 1fr));
-When the container changes size, this setup keeps inserting 60px columns and stretching them until it can insert another one. Note: If the container can't fit all the items on one row, it will move them down to a new one.
+When the container changes size, this setup keeps inserting 60px columns and stretching them until it can insert another one.
+Note: If the container can't fit all the items on one row, it will move them down to a new one.
+
+## auto-fit parameter
+auto-fit works almost identically to auto-fill. The only difference is that when the container's size exceeds the size of all the items combined, auto-fill keeps inserting empty rows or columns and pushes the items to the side, while auto-fit collapses those empty rows or columns and stretches the items to fit the size of the container.
+Note: If your container can't fit all your items on one row, it will move them down to a new one.
+e.g.
+grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
 
 ## column-gap property
 grid-column-gap property obsolete
