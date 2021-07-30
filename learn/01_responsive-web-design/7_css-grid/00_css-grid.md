@@ -98,3 +98,6 @@ aligns the content at the right of the cell.
 
 ## align-self property
 Aligns an item vertically. This property accepts all of the same values as justify-self.
+
+## justify-items property
+Align all the items in the CSS Grid to the same alignment. You can use the previously learned properties and align them individually, or you can align them all at once horizontally by using justify-items on your grid container. This property can accept all the same values listed above the difference being that it will move all the items in the grid to the desired alignment.
