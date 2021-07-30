@@ -118,3 +118,12 @@ The code above merges the top three cells together into an area named header, th
 
 ## empty cell
 In addition to custom labels the grid-template-areas property, you can use a period (.) to designate an empty cell in the grid.
+
+## grid-area property
+Places an item into an area by referencing the area name.
+e.g.
+.item1 {
+  grid-area: header;
+}
+Will put item1 into the grid-area header.
+
