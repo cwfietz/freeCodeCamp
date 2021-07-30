@@ -101,3 +101,6 @@ Aligns an item vertically. This property accepts all of the same values as justi
 
 ## justify-items property
 Align all the items in the CSS Grid to the same alignment. You can use the previously learned properties and align them individually, or you can align them all at once horizontally by using justify-items on your grid container. This property can accept all the same values listed above the difference being that it will move all the items in the grid to the desired alignment.
+
+## align-items property
+Sets the vertical alignment for all the items in the grid. This property can accept all the same values listed above.
