@@ -204,3 +204,34 @@ e.g.
   }
 }
 When the viewport width is 300px or more, the number of columns changes from 1 to 2. The advertisement area then occupies the left column completely. When the viewport width is 400px or greater, the advertisement area occupies the middle of the left column and the header and footer occupy the top and bottom rows. 
+
+## grids within grids
+Turning an element into a grid only affects the behaviour of its direct descendants. So by turning a direct descendant into a grid, you have a grid within a grid.
+e.g.
+.container {
+  font-size: 1.5em;
+  min-height: 300px;
+  width: 100%;
+  background: LightGray;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 10px;
+  grid-template-areas:
+    "advert header"
+    "advert content"
+    "advert footer";
+}
+<snip>
+.item3 {
+  background: PaleTurquoise;
+  grid-area: content;
+
+  /* enter your code below this line */
+  display: grid;
+  grid-template-columns: auto 1fr;
+  /* enter your code above this line */
+
+}
+<snip>
+Setting the display and grid-template-columns properties of the element with the item3 class, creates a grid within your grid.
