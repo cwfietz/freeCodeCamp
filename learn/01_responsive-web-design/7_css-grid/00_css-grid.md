@@ -166,3 +166,41 @@ item1 will consume the rows between lines 1 and 2, and the columns between lines
 e.g.
 .item5 { grid-area: 3/1/4/4; }
 item5 will consume the rows between lines 3 and 4, and the columns between lines 1 and 4.
+
+## media query 
+CSS Grid can be an easy way to make a site more responsive by using media queries to rearrange grid areas, change dimensions of a grid, and rearrange the placement of items.
+e.g.
+.container {
+  font-size: 1.5em;
+  min-height: 300px;
+  width: 100%;
+  background: LightGray;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px auto 1fr auto;
+  grid-gap: 10px;
+  grid-template-areas:
+    "header"
+    "advert"
+    "content"
+    "footer";
+}
+@media (min-width: 300px) {
+  .container {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "advert header"
+      "advert content"
+      "advert footer";
+  }
+}
+@media (min-width: 400px) {
+  .container {
+    grid-template-areas:
+      "header header"
+      "advert content"
+      "footer footer";
+  }
+}
+When the viewport width is 300px or more, the number of columns changes from 1 to 2. The advertisement area then occupies the left column completely. When the viewport width is 400px or greater, the advertisement area occupies the middle of the left column and the header and footer occupy the top and bottom rows. 
