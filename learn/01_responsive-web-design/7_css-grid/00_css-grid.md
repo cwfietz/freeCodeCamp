@@ -80,3 +80,19 @@ This will make the item start at the first vertical line of the grid on the left
 e.g.
 grid-row: 2 / 4;
 Will make the item start at the second horizontal line of the grid from the top and do down to the 4th horizontal line of the grid consuming two rows.
+
+## justify-self property
+In CSS Grid, the content of each item is located in a box which is referred to as a cell. You can align the content's position within its cell horizontally using the justify-self property on a grid item. 
+
+### stretch
+By default, the justify-self property has a value of stretch, which will make the content fill the whole width of the cell. 
+
+### start
+aligns the content at the left of the cell,
+
+### center
+aligns the content in the center of the cell,
+
+### end
+aligns the content at the right of the cell.
+
