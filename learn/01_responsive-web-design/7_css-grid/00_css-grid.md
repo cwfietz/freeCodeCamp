@@ -55,3 +55,23 @@ row-gap: 5px;
 ## gap property
 grid-gap property obsolete
 A shorthand property for grid-row-gap and grid-column-gap that's more convenient to use. If gap has one value, it will create a gap between all rows and columns. However, if there are two values, it will use the first one to set the gap between the rows and the second value for the columns.
+
+
+## grid-column property 
+Up to this point, all the properties that have been discussed are for grid containers. The grid-column property is the first one for use on the grid items themselves.
+
+The hypothetical horizontal and vertical lines that create the grid are referred to as lines. These lines are numbered starting with 1 at the top left corner of the grid and move right for columns and down for rows, counting upward.
+
+This is what the lines look like for a 3x3 grid:
+
+            column lines
+            1 2 3 4
+row lines 1
+          2
+          3
+          4
+
+To control the number of columns an item will consume, you can use the grid-column property in conjunction with the line numbers you want the item to start and stop at.
+e.g.
+grid-column: 1 / 3;
+This will make the item start at the first vertical line of the grid on the left and span to the 3rd vertical line of the grid, consuming two columns.
