@@ -1,34 +1,26 @@
-CSS
+# CSS
 ==============================================================================
 Review of Cascading Style Sheets (CSS) in FreeCodeCamp.org
 
-
-1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
-         1         2         3         4         5         6         7         8         9         0
-==============================================================================
-
-CSS is case-sensitive.
+## CSS is case-sensitive.
 hundreds of CSS properties
 
+## Three ways of adding styles
 1. Inline styles: HTML elements with the style attribute
 2. CSS rules in style tags in an HTML document.
 3. External style sheets which are referenced in the HTML documents
 
 good practice to end inline style declarations with a ;
 
-
-===========
-Example of an inline style
+## Example of an inline style
 <h2 style="color: blue;">CatPhotoApp</h2>
 
-===========
-Style block in style tags.
+## Style block in style tags.
 <style>
 </style>
 
-===========
-Inside style elements 
-class names start with a period.
+## Inside style elements 
+### class names start with a period.
 
 <style>
   .blue-text {
@@ -38,8 +30,7 @@ class names start with a period.
 
 <h2 class="blue-text">CatPhotoApp</h2>
 
-===========
-HTML elements can also have an id attribute.
+## HTML elements can also have an id attribute.
 Example:
 <h2 id="cat-photo-element">
 Make id unique to each element with an id.
@@ -54,8 +45,7 @@ Example:
 
 
 
-===========
-Inheritance:
+## Inheritance:
 
 body element of HTML documents
 
@@ -67,8 +57,7 @@ body {
 
 all elements in the body will inherit the body element's styles.
 
-====
-class styles will override the styles inherited from body.
+### class styles will override the styles inherited from body.
 Example:
 <style>
   body {
@@ -132,8 +121,9 @@ Example
 
 “Hello World!” shows as orange against a black background because orange-text is  an id.
 
-====
+
 Inline styes override class styles and id styles
+====
 
 <style>
   body {

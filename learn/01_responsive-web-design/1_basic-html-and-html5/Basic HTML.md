@@ -137,6 +137,7 @@ Text
 <input type="text">
 self closing
 
+Placeholder
 <input type="text" placeholder="Please, type you input here.">
 
 The HTML5 "required" attribute
