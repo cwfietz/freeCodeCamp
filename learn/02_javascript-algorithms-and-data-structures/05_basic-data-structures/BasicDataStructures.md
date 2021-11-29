@@ -1,34 +1,34 @@
-BasicDataStructures.txt
+# BasicDataStructures.txt
 ================================================================================
 1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
          1         2         3         4         5         6         7         8         9         0
 
 // ======================================================
-Array methods
+## Array methods
 // ======================================================
 
-push()
+### push()
 // ======================================================
 arrayName.push(list of items to be added to the end (right) of the array)
 
-unshift()
+### unshift()
 // ======================================================
 arrayName.unshift(list of items to be added to the beginning (left) of the array)
 
-pop()
+### pop()
 // ======================================================
 let varName = arrayName.pop()
 // varName is the item that was at the end (right) of arrayName.
 // arrayName no longer contains the item that was at the end (right)
 
-shift()
+### shift()
 // ======================================================
 let varName = arrayName.shift()
 // varName is the item that was at the beginning (left) of the array
 // arrayName no longer contains the item that was at the beginning (left) of the array)
 
 
-splice()
+### splice()
 // ======================================================
 let varName = arrayName.splice(startIndex, numberToRemove, list of items to add at startIndex)
 
@@ -38,14 +38,14 @@ let varName = arrayName.splice(startIndex, numberToRemove, list of items to add 
 // there place.
 
 
-slice()
+### slice()
 // ======================================================
 let newArrayName = arrayName.slice(startIndex, endIndex)
 // newArrayName is an array of elements from startIndex to one less
 // than endIndex.
 
 
-… (spread operator)
+### … (spread operator)
 // ======================================================
 spreads the contents of an array out to be used in place of a list of items.
 e.g.
@@ -55,7 +55,7 @@ let longerArray = [item1, item2, …oldArray, item3, etc.]
 // longerArray includes all the items including the items from oldArray.
 
 
-indexOf()
+### indexOf()
 // ======================================================
 let indexNumber = arrayName.indexOf(item that may or may not be in arrayName)
 // if the item is not in the array -1 is returned.
@@ -73,11 +73,11 @@ for (let index = 0; index < arr.length; index++ ) {
 
 
 // ======================================================
-Objects as data structures
+## Objects as data structures
 // ======================================================
 
 
-key-value pairs
+### key-value pairs
 // ======================================================
 key value pairs can be added to existing objects using dot or bracket notation. Variables of type string can be used within brackets.
 e.g.
@@ -99,7 +99,7 @@ e.g.
 userActivity.data.online = 45;
 userActivity['data']['online'] = 45;
 
-delete
+### delete
 // ======================================================
 Deletes a property (key-value pair) from an object.
 Can use dot or bracket notation.
@@ -108,13 +108,13 @@ delete objectName[‘property’];
 delete objectName[variable that corresponds to a property]
 
 
-hasOwnProperty() -OR- ‘property’ in objectName
+### hasOwnProperty() -OR- ‘property’ in objectName
 // ======================================================
 returns true if an object has a property.
 returns false otherwise.
 
 
-for in statement
+### for in statement
 // ======================================================
 
 for (let key in objectName) {    
@@ -124,11 +124,9 @@ for (let key in objectName) {
 }
 
 
-
-Object.keys(objectName);
+### Object.keys(objectName);
 // ======================================================
 returns an array of all the keys in objectName.
-
 
 objectName.property.property. … .push() will add to an array that is a value of a property.
 

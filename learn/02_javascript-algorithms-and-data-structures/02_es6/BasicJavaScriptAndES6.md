@@ -1,15 +1,15 @@
 ~/Documents/1200 School (general)/1208 Online Courses/1208.3 FreeCodeCamp/JavaScript/BasicJavaScriptAndES6.txt
 
-Review of JavaScript in FreeCodeCamp.org
+# Review of JavaScript in FreeCodeCamp.org
 
 1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
          1         2         3         4         5         6         7         8         9         0
 
 
-// Comments
+## Comments
 console.log(‘message’); // Write to the console
 
-// Variables
+## Variables
 // ======================================================
 
 variableName; // variable of undefined type of global scope. Not a good practice
@@ -20,8 +20,8 @@ variableName = 5; // assignment
 var variableName = 5; // initialization, variableName is defined.
 
 
-// Arithmetic
-// ======================================================
+## Arithmetic
+======================================================
 variableName = 5 + 10; // addition
 variableName = 12 - 6; // subtraction
 variableName = 12 * 6; // multiplication
@@ -39,7 +39,7 @@ var varRemainder = 5 % 2; // remainder operator - varRemainder is 1;
 // Compound assignment +=, -=, *=, /=, %=
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Assignment
 
-// Strings 
+## Strings 
 // ======================================================
 // Strings are immutable
 
@@ -71,7 +71,7 @@ var varChar = varStr[0]; // ‘H’.
 // But since strings are immutable. varString[0] = ‘J’; Assignment, will NOT work.
 
 
-// Arrays, 
+## Arrays, 
 // ======================================================
 // Arrays are mutable
 
@@ -98,7 +98,7 @@ var varArray = [1, 4, 6];
 varArray.unshift(3); // varArray is [3, 1, 4, 6]
 
 
-// Functions
+## Functions
 // ======================================================
 
 function functionName() {
@@ -116,7 +116,7 @@ testFunName(arg1, arg2);
 var varName = testFunName(arg1, arg2); // but varName has no type since testFunName() has no return statement (see below)
 
 
-// Scope rules
+### Scope rules
 
 function testFun(param1, param2) {
   var variableName; // undefined but of local scope
@@ -146,14 +146,14 @@ function returnFoo() {
 console.log( returnFoo() ); // logs ‘foo’ // function type is defined by type of what is returned. A function with no return statement has a returned type of undefined.
 
 
-// Booleans 
+## Booleans 
 // ======================================================
 true, false
 
 “true” and “false” are just strings.
 
 
-// Comparison operators 
+## Comparison operators 
 // ======================================================
 
 ==  equality (with type conversions if needed)
@@ -169,7 +169,7 @@ true, false
 ||  logical Or
 
 
-// if-then-else
+## if-then-else
 // ======================================================
 if (condition is true) {
   statement is executed
@@ -190,14 +190,14 @@ if (condition is true) {
 }
 
 
-// the Conditional (Ternary) Operator
+## the Conditional (Ternary) Operator
 // ======================================================
 // condition ? statement-if-true : statement-if-false;
 a > b ? "a is greater" : "b is greater";
 // These can be chained by putting a ternary operator in the false part of a ternary operator statement.
 
                                    
-// switch
+## switch
 // ======================================================
 switch(parameter) {
   case value1:        // test is for value1 === parameter
@@ -212,7 +212,7 @@ switch(parameter) {
     break;
 }
 
-// For val of 1, 2, or 3, result = "1, 2, or 3"
+## For val of 1, 2, or 3, result = "1, 2, or 3"
 switch(val) {
   case 1:
   case 2:
@@ -224,7 +224,7 @@ switch(val) {
 }
 
 
-// Objects, {}
+## Objects, {}
 // ======================================================
 var objectName = {
   "property1 of multiple words": "value1",    // note the comma separated list of properties
@@ -266,14 +266,14 @@ anArray[2].property2[4]; // for anArray of objectName objects in which objectNam
 
 boolean variable = objectName.hasOwnProperty(aNameOfCandidateProperty); // returns true or false
 
-// While Loops
+## While Loops
 // ======================================================
 while (boolean condition) {
   statements to execute;
   increment something so that boolean condition is eventually false;
 }
 
-// For Loops
+## For Loops
 // ======================================================
 // for ([initialization]; [condition]; [final-expression]) {
 //  statements to execute;
@@ -285,7 +285,7 @@ for (var iterate = 0; iterate < 5; iterate++) {
 }
 
 
-// do...while loops
+## do...while loops
 // ======================================================
 do {
   statements to execute at least once and maybe only once;
@@ -299,7 +299,7 @@ parseInt(string, radix); returns an integer in base 10 by converting the string 
 
 
 
-// Testing makeshift attempt 1
+## Testing makeshift attempt 1
 // ======================================================
 // Testing
 console.log(Testing([function name], param1, param2));
@@ -315,7 +315,7 @@ function Testing (funct, param1, param2 ) {
   }
 }
 
-// Testing attempt 2 
+## Testing attempt 2 
 // ======================================================
 var arg1, arg2, expected;
 
@@ -347,7 +347,7 @@ function Testing(funct, expected, param1, param2) {
   }
 }
 
-// How to take notes on algorithms or techniques?
+## How to take notes on algorithms or techniques?
 // ======================================================
 
 Recursion:
@@ -364,7 +364,7 @@ function funName( param ) {
 
 
 // =========================================================
-ES6  ECMAScript is interchangeable with the term JavaScript
+## ECMAScript is interchangeable with the term JavaScript
 ES10 ECMAScript 2019 now exists.
 // =========================================================
 // =========================================================
@@ -445,7 +445,7 @@ can be multi-line.`
 
 
 
-object property shorthand
+## object property shorthand
 // ======================================================
 const varName = (objectParam1, objectParam2, objectParam3) => ({
     objectParam1,
@@ -457,7 +457,7 @@ varName(arg1, arg2, arg3) will return object
 { objectParam1: arg1, objectParam2: arg2, objectParam3: arg3 }
 
 
-concise declarative functions
+## concise declarative functions
 // ======================================================
 const objectName = {
   objectParam1,
@@ -468,7 +468,7 @@ const objectName = {
 //calling objectName.objectFunction(value) sets objectParam1 to value.
 
 
-constructor functions
+## constructor functions
 // ======================================================
 class className {
   constructor(value) {
@@ -478,7 +478,7 @@ class className {
 // const objectName = new className(value) constructs className object with classParam1 as value.
 
 
-getters, setters
+## getters, setters
 // ======================================================
 class className {
   constructor(inputParam1) {
@@ -498,7 +498,7 @@ objName.methodName = arg2 // sets _param1 as arg2
 // methodName is same for both the getter and setter. methodName is not called as a method but an attribute of the object.
 
 
-module script
+## module script
 // ======================================================
 <html>
   <body>
@@ -552,7 +552,7 @@ e.g. import add from "./math_functions.js";
 the name varName in the current file.
 
 
-Promise
+## Promise
 // ======================================================
 a constructor function (therefore the use of the new keyword)
 Takes a functions with the parameters resolve and reject (methods or functions)
@@ -630,10 +630,8 @@ makeServerRequest.catch(error => {	// in this case result will
 
 
 // ======================================================
-End of ES6 Challenges
+## End of ES6 Challenges
 // ======================================================
-
-
 
 Next,
 Basic Data Structure Challenges
